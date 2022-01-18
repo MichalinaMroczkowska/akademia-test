@@ -1,0 +1,361 @@
+
+micha@DESKTOP-UHFNDUA MINGW64 ~
+$ pwd
+/c/Users/micha
+
+micha@DESKTOP-UHFNDUA MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+ Contacts/
+ Cookies@
+'Dane aplikacji'@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Menu Start'@
+'Moje dokumenty'@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Szablony@
+'Ustawienia lokalne'@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+micha@DESKTOP-UHFNDUA MINGW64 ~
+$ cd ../
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/Users
+$ cd ../
+
+micha@DESKTOP-UHFNDUA MINGW64 /c
+$ cd fullstackacademy/modul3/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ mkdir repozytoriumTest
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ ls
+git/  repozytoriumTest/  tabliceedukacyjne/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ git init fullstackacademyTest
+Initialized empty Git repository in C:/fullstackacademy/modul3/fullstackacademyTest/.git/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ mv --help
+Usage: mv [OPTION]... [-T] SOURCE DEST
+  or:  mv [OPTION]... SOURCE... DIRECTORY
+  or:  mv [OPTION]... -t DIRECTORY SOURCE...
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+  -f, --force                  do not prompt before overwriting
+  -i, --interactive            prompt before overwrite
+  -n, --no-clobber             do not overwrite an existing file
+If you specify more than one of -i, -f, -n, only the final one takes effect.
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  move all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 move only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -Z, --context                set SELinux security context of destination
+                                 file to default type
+      --help     display this help and exit
+      --version  output version information and exit
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/mv>
+or available locally via: info '(coreutils) mv invocation'
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ mv
+fullstackacademyTest/ git/                  repozytoriumTest/     tabliceedukacyjne/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ mv
+fullstackacademyTest/ git/                  repozytoriumTest/     tabliceedukacyjne/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ mv fullstackacademyTest repozytoriumTest/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ ls
+git/  repozytoriumTest/  tabliceedukacyjne/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3
+$ cd repozytoriumTest/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest
+$ ls
+fullstackacademyTest/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest
+$ cd fullstackacademyTest/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ ls
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git branch
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ ls -a
+./  ../  .git/
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ touch --help
+Usage: touch [OPTION]... FILE...
+Update the access and modification times of each FILE to the current time.
+
+A FILE argument that does not exist is created empty, unless -c or -h
+is supplied.
+
+A FILE argument string of - is handled specially and causes touch to
+change the times of the file associated with standard output.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a                     change only the access time
+  -c, --no-create        do not create any files
+  -d, --date=STRING      parse STRING and use it instead of current time
+  -f                     (ignored)
+  -h, --no-dereference   affect each symbolic link instead of any referenced
+                         file (useful only on systems that can change the
+                         timestamps of a symlink)
+  -m                     change only the modification time
+  -r, --reference=FILE   use this file's times instead of current time
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time
+      --time=WORD        change the specified time:
+                           WORD is access, atime, or use: equivalent to -a
+                           WORD is modify or mtime: equivalent to -m
+      --help     display this help and exit
+      --version  output version information and exit
+
+Note that the -d and -t options accept different time-date formats.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/touch>
+or available locally via: info '(coreutils) touch invocation'
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ touch index.html
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ ls
+index.html
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ open
+bash: open: command not found
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ open .
+bash: open: command not found
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.html.bak
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.html.bak
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ del --help
+bash: del: command not found
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ rm --help
+Usage: rm [OPTION]... [FILE]...
+Remove (unlink) the FILE(s).
+
+  -f, --force           ignore nonexistent files and arguments, never prompt
+  -i                    prompt before every removal
+  -I                    prompt once before removing more than three files, or
+                          when removing recursively; less intrusive than -i,
+                          while still giving protection against most mistakes
+      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or
+                          always (-i); without WHEN, prompt always
+      --one-file-system  when removing a hierarchy recursively, skip any
+                          directory that is on a file system different from
+                          that of the corresponding command line argument
+      --no-preserve-root  do not treat '/' specially
+      --preserve-root[=all]  do not remove '/' (default);
+                              with 'all', reject any command line argument
+                              on a separate device from its parent
+  -r, -R, --recursive   remove directories and their contents recursively
+  -d, --dir             remove empty directories
+  -v, --verbose         explain what is being done
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, rm does not remove directories.  Use the --recursive (-r or -R)
+option to remove each listed directory, too, along with all of its contents.
+
+To remove a file whose name starts with a '-', for example '-foo',
+use one of these commands:
+  rm -- -foo
+
+  rm ./-foo
+
+Note that if you use rm to remove a file, it might be possible to recover
+some of its contents, given sufficient expertise and/or time.  For greater
+assurance that the contents are truly unrecoverable, consider using shred.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/rm>
+or available locally via: info '(coreutils) rm invocation'
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ rm
+RMActivate.exe          RMActivate_ssp.exe      RMSRoamingSecurity.dll  RmClient.exe            rmclient.dll            rmttpmvscmgrsvr.exe
+RMActivate_isv.exe      RMActivate_ssp_isv.exe  RMapi.dll               rm.exe                  rmdir.exe
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ rm index.html
+index.html      index.html.bak
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ rm index.html.bak
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ ls
+index.html
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git add .
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git comit -m "dodałam plik index.html z napisem Łeso Łeno i Huteno"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git commit -m "dodałam plik index.html z napisem Łeso Łeno i Huteno"
+[master (root-commit) 2cb7fad] dodałam plik index.html z napisem Łeso Łeno i Huteno
+ 1 file changed, 5 insertions(+)
+ create mode 100644 index.html
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git log
+commit 2cb7fad151f0ba328d52f73384436ab3a99ad600 (HEAD -> master)
+Author: MichalinaMroczkowska <michalina.kuczynska@gmail.com>
+Date:   Mon Jan 17 01:07:20 2022 +0100
+
+    dodałam plik index.html z napisem Łeso Łeno i Huteno
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html.bak
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git add index.html
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html.bak
+
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$ ^C
+
+micha@DESKTOP-UHFNDUA MINGW64 /c/fullstackacademy/modul3/repozytoriumTest/fullstackacademyTest (master)
+$
